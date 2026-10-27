@@ -1,0 +1,2 @@
+# The bundled skill must stay byte for byte equal to SHA256SUMS on every OS.
+plugins/tinycloud/skills/tc-apps/* -text

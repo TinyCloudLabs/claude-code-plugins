@@ -1,0 +1,26 @@
+name: Verify
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checksums:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Bundled tc-apps skill matches its SHA256SUMS
+        run: node scripts/sync-skill.mjs --check
+
+      - name: Same check with sha256sum
+        working-directory: plugins/tinycloud/skills/tc-apps
+        run: sha256sum -c SHA256SUMS
+
+      - name: Manifests are valid JSON
+        run: jq empty .claude-plugin/marketplace.json plugins/tinycloud/.claude-plugin/plugin.json

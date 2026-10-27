@@ -1,0 +1,17 @@
+{
+  "name": "tinycloudlabs",
+  "description": "TinyCloud plugins for Claude Code, from TinyCloud Labs.",
+  "owner": {
+    "name": "TinyCloud Labs",
+    "url": "https://tinycloud.xyz"
+  },
+  "plugins": [
+    {
+      "name": "tinycloud",
+      "source": "./plugins/tinycloud",
+      "description": "Keep your personal records, like weight, workouts, goals and todos, in your own TinyCloud storage. You approve access on OpenKey.",
+      "category": "productivity",
+      "tags": ["tinycloud", "personal-data", "records"]
+    }
+  ]
+}

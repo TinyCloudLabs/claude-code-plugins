@@ -1,0 +1,25 @@
+{
+  "name": "tinycloud",
+  "displayName": "TinyCloud",
+  "version": "0.1.0",
+  "description": "Keep your personal records, like weight, workouts, goals and todos, in your own TinyCloud storage. Adds TinyCloud's tc-apps skill and a setup skill that installs the TinyCloud CLI for it.",
+  "author": {
+    "name": "TinyCloud Labs",
+    "url": "https://tinycloud.xyz"
+  },
+  "homepage": "https://agents.tinycloud.xyz/apps",
+  "repository": "https://github.com/TinyCloudLabs/claude-code-plugins",
+  "license": "MIT",
+  "keywords": [
+    "tinycloud",
+    "personal-data",
+    "records",
+    "openkey"
+  ],
+  "metadata": {
+    "tc-apps": {
+      "version": "0.2.1",
+      "source": "https://agents.tinycloud.xyz/skills/apps/"
+    }
+  }
+}
